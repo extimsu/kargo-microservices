@@ -19,7 +19,8 @@ spec:
         config:
           repoURL: https://github.com/jessesuen/kargo-microservices.git
           checkout:
-          - path: ./src
+          - branch: main
+            path: ./src  
 
       - uses: kustomize-set-image
         as: update-image
@@ -73,7 +74,8 @@ spec:
         config:
           repoURL: https://github.com/jessesuen/kargo-microservices.git
           checkout:
-          - path: ./src
+          - branch: main
+            path: ./src
 
       - uses: kustomize-set-image
         as: update-image
